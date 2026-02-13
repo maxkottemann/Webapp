@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeasureTrack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Sidebar -->
+<aside class="sidebar">
+
+  <div class="sidebar-header">
+ <img src="img/fullTextLogoSmall.png" class="logo">
+  </div>
+
+  <nav class="nav">
+    <a class="nav-item" href = "index.html">Dashboard</a>
+    <a class="nav-item" href = "metingen.html">Projecten</a>
+    <a class="nav-item" href = "producten.html">Producten</a>
+    <a class="nav-item active" href = "inventaris.html">Inventaris</a>
+    <a class="nav-item">Settings</a>
+  </nav>
+
+</aside>
+
+   <div class="main">
+
+      <!-- Top Bar -->
+      <header class="topbar">
+        <h1 class="page-title">Inventaris</h1>
+        <div class="user-menu">
+    <button class="topbarbutton">
+        <img src="img/notification.png" class="notificationicon">
+        <!-- Hover menu -->
+        <div class="hover-menu">
+            <ul>
+                <a href="inventaris.html"><li class="notificationmenuitem">Nieuwe Levering Ontvangen</li></a>
+                <a href="producten.html"><li class="notificationmenuitem">Nieuw Product Ontvangen</li></a>
+                <a href="inventaris.html"><li class="notificationmenuitem">Nieuwe Levering Ontvangen</li></a>
+                <a href="inventaris.html"><li class="notificationmenuitem">Nieuwe Levering Ontvangen</li></a>
+            </ul>
+        </div>
+    </button>
+    <span class="user-name">Admin</span>
+    <div class="avatar">A</div>
+</div>
+      </header>
+
+      
+        <div class="meting-card-header animate-in delay-1">
+            <h2 class="secondarytext">Welkom User</h2>
+   
+<div class="centerbox">
+    <input class="searchbar" placeholder="Zoek project...">
+    <button class="topbarbutton">
+        <img src ="img/filter.png" class="filterimage">
+    </button>
+   </div>   
+    <div class="button-group">
+        <button class="mainbutton">Bijwerken</button>
+  </div>
+        </div>
+
+        <div class = "topcardholder animate-in delay-2">
+        <div class = "kpi-grid">
+            <div class = "card animate-in delay-2">
+                <h3 class="cardtext">Totale Inventaris</h3>
+                <p class = "kpi-value">21.908</p>
+            </div>
+            
+            <div class = "card animate-in delay-2">
+                <h3 class="cardtext">Laatste Telling</h3>
+                <p class = "kpi-value">01-01-2026</p>
+            </div>
+
+            <div class = "card animate-in delay-2">
+                <h3 class="cardtext">Laatste Levering</h3>
+                <p class = "kpi-value">01-01-2026</p>
+            </div>
+
+        </div>
+
+         <div class ="card animate-in delay-4">
+         <div class="tableheader">
+            <h2>Producten</h2>
+            
+         </div>
+         <table>
+            <thead>
+                <tr>
+                    <th>Productnaam</th>
+                    <th>Kwantiteit</th>
+                    <th>Prijs</th>
+                    <th>Laatste Verkocht</th>
+                    <th>Acties</th>
+
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+    <td>Ernie Ball Strings</td>
+    <td>231</td>
+    <td>9,95</td>
+    <td>01-01-2026</td>
+     <td class="tablecellbutton">
+      <button class="icon-button view"><img src="img/view.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+</tr>
+<tr>
+    <td>Fender Picks</td>
+    <td>500</td>
+    <td>0,99</td>
+    <td>05-01-2026</td>
+    <td class="tablecellbutton">
+      <button class="icon-button view"><img src="img/view.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+</tr>
+<tr>
+    <td>Gibson Strap</td>
+    <td>120</td>
+    <td>29,95</td>
+    <td>12-01-2026</td>
+    <td class="tablecellbutton">
+      <button class="icon-button view"><img src="img/view.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+</tr>
+<tr>
+    <td>Yamaha Drumsticks</td>
+    <td>300</td>
+    <td>14,50</td>
+    <td>10-01-2026</td>
+    <td class="tablecellbutton">
+      <button class="icon-button view"><img src="img/view.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+</tr>
+<tr>
+    <td>Shure Microphone</td>
+    <td>75</td>
+    <td>129,99</td>
+    <td>15-01-2026</td>
+    <td class="tablecellbutton">
+      <button class="icon-button view"><img src="img/view.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+</tr>
+<tr>
+    <td>Boss Pedal</td>
+    <td>60</td>
+    <td>89,95</td>
+    <td>20-01-2026</td>
+    <td class="tablecellbutton">
+      <button class="icon-button view"><img src="img/view.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+</tr>
+<tr>
+    <td>Ibanez Guitar</td>
+    <td>45</td>
+    <td>499,00</td>
+    <td>22-01-2026</td>
+    <td class="tablecellbutton">
+      <button class="icon-button view"><img src="img/view.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+</tr>
+<tr>
+    <td>Roland Keyboard</td>
+    <td>30</td>
+    <td>699,00</td>
+    <td>25-01-2026</td>
+    <td class="tablecellbutton">
+      <button class="icon-button view"><img src="img/view.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+</tr>
+<tr>
+    <td>Audio-Technica Headphones</td>
+    <td>85</td>
+    <td>59,99</td>
+    <td>28-01-2026</td>
+   <td class="tablecellbutton">
+      <button class="icon-button view"><img src="img/view.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+</tr>
+<tr>
+    <td>Fender Amplifier</td>
+    <td>25</td>
+    <td>399,99</td>
+    <td>30-01-2026</td>
+    <td class="tablecellbutton">
+      <button class="icon-button view"><img src="img/view.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+</tr>
+<tr>
+    <td>Martin Guitar Strings</td>
+    <td>150</td>
+    <td>11,50</td>
+    <td>02-02-2026</td>
+    <td class="tablecellbutton">
+      <button class="icon-button view"><img src="img/view.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+</tr>
+<tr>
+    <td>DW Drum Pedal</td>
+    <td>40</td>
+    <td>129,00</td>
+    <td>04-02-2026</td>
+    <td class="tablecellbutton">
+      <button class="icon-button view"><img src="img/view.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+</tr>
+<tr>
+    <td>Korg Synth</td>
+    <td>20</td>
+    <td>599,00</td>
+    <td>06-02-2026</td>
+    <td class="tablecellbutton">
+      <button class="icon-button view"><img src="img/view.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+</tr>
+<tr>
+    <td>Zoom Recorder</td>
+    <td>55</td>
+    <td>199,99</td>
+    <td>08-02-2026</td>
+    <td class="tablecellbutton">
+      <button class="icon-button view"><img src="img/view.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+</tr>
+<tr>
+    <td>Peavey Speaker</td>
+    <td>35</td>
+    <td>249,99</td>
+    <td>10-02-2026</td>
+    <td class="tablecellbutton">
+      <button class="icon-button view"><img src="img/view.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+</tr>
+
+</tbody>
+         </table>
+
+
+   </div>

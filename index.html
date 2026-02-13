@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeasureTrack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Sidebar -->
+<aside class="sidebar">
+
+  <div class="sidebar-header">
+   <img src="img/fullTextLogoSmall.png" class="logo">
+  </div>
+
+  <nav class="nav">
+    <a class="nav-item active">Dashboard</a>
+    <a class="nav-item" href = "metingen.html">Projecten</a>
+    <a class="nav-item" href = "producten.html">Producten</a>
+    <a class="nav-item" href = "inventaris.html">Inventaris</a>
+    <a class="nav-item">Settings</a>
+  </nav>
+
+</aside>
+
+
+    <!-- Main Content -->
+    <div class="main">
+
+     
+
+      <!-- Page Content -->
+
+         <header class="topbar">
+        <h1 class="page-title">Dashboard</h1>
+        <div class="user-menu">
+    <button class="topbarbutton">
+        <img src="img/notification.png" class="notificationicon">
+        <!-- Hover menu -->
+        <div class="hover-menu">
+            <ul>
+                <a href="inventaris.html"><li class="notificationmenuitem">Nieuwe Levering Ontvangen</li></a>
+                <a href="producten.html"><li class="notificationmenuitem">Nieuw Product Toegevoegd</li></a>
+                <a href="inventaris.html"><li class="notificationmenuitem">Nieuwe Levering Ontvangen</li></a>
+                <a href="inventaris.html"><li class="notificationmenuitem">Nieuwe Levering Ontvangen</li></a>
+            </ul>
+        </div>
+    </button>
+    <span class="user-name">Admin</span>
+    <div class="avatar">A</div>
+</div>
+      </header>
+
+        <!-- KPI Cards -->
+        <div class="kpi-grid">
+          <div class="card animate-in delay-2">
+            <h3 class="cardtext">Totale Metingen</h3>
+            <p class="kpi-value">128</p>
+          </div>
+          <div class="card animate-in delay-3">
+            <h3 class="cardtext">Actieve Projecten</h3>
+            <p class="kpi-value">6</p>
+          </div>
+          <div class="card animate-in delay-4">
+            <h3 class="cardtext">Lage inventaris</h3>
+            <p class="kpi-value warning">2</p>
+          </div>
+        </div>
+
+        
+
+        <!-- Table -->
+        <div class="card animate-in delay-3">
+          <h2 class="cardtext">Recente Metingen</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Project</th>
+                <th>Lengte</th>
+                <th>Breedte</th>
+                <th>Hoogte</th>
+                <th>Datum</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Project Alpha</td>
+                <td>120 cm</td>
+                <td>60 cm</td>
+                <td>40 cm</td>
+                <td>2026-02-10</td>
+              </tr>
+              <tr>
+                <td>Project Beta</td>
+                <td>200 cm</td>
+                <td>80 cm</td>
+                <td>50 cm</td>
+                <td>2026-02-09</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Mock Charts -->
+<div class="charts-grid">
+
+  <!-- Line Chart Mock -->
+  <div class="card animate-in delay-4">
+    <h2 class="cardtext">Metingen Over Tijd</h2>
+    <div class="chart chart-line">
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <!-- Bar Chart Mock -->
+  <div class="card animate-in delay-4">
+    <h2 class="cardtext">Inventaris Gebruik</h2>
+    <div class="chart chart-bar">
+      <div class="bar" style="height: 40%"></div>
+      <div class="bar" style="height: 65%"></div>
+      <div class="bar" style="height: 30%"></div>
+      <div class="bar" style="height: 80%"></div>
+      <div class="bar" style="height: 50%"></div>
+    </div>
+  </div>
+
+</div>
+
+
+ 
+    </div>
+
+  </div>
+
+</body>
+</html>

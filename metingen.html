@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeasureTrack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Sidebar -->
+<aside class="sidebar">
+
+  <div class="sidebar-header">
+    <img src="img/fullTextLogoSmall.png" class="logo">
+  </div>
+
+  <nav class="nav">
+    <a class="nav-item" href = "index.html">Dashboard</a>
+    <a class="nav-item active" href = "metingen.html">Projecten</a>
+    <a class="nav-item" href = "producten.html">Producten</a>
+    <a class="nav-item" href = "inventaris.html">Inventaris</a>
+    <a class="nav-item">Settings</a>
+  </nav>
+
+</aside>
+
+   <div class="main">
+
+      <!-- Top Bar -->
+      <header class="topbar">
+        <h1 class="page-title">Projecten</h1>
+       <div class="user-menu">
+    <button class="topbarbutton">
+        <img src="img/notification.png" class="notificationicon">
+        <!-- Hover menu -->
+        <div class="hover-menu">
+            <ul>
+                <a href="inventaris.html"><li class="notificationmenuitem">Nieuwe Levering Ontvangen</li></a>
+                <a href="producten.html"><li class="notificationmenuitem">Nieuw Product Ontvangen</li></a>
+                <a href="inventaris.html"><li class="notificationmenuitem">Nieuwe Levering Ontvangen</li></a>
+                <a href="inventaris.html"><li class="notificationmenuitem">Nieuwe Levering Ontvangen</li></a>
+            </ul>
+        </div>
+    </button>
+    <span class="user-name">Admin</span>
+    <div class="avatar">A</div>
+</div>
+      </header>
+
+      
+        <div class="meting-card-header animate-in">
+            <h2 class="secondarytext">Welkom User</h2>
+   
+   <div class="centerbox">
+    <input class="searchbar" placeholder="Zoek project...">
+    <button class="topbarbutton">
+        <img src ="img/filter.png" class="filterimage">
+    </button>
+   </div>
+   
+    <div class="button-group">
+    <button class="mainbutton">Nieuw Project</button>
+  </div>
+</div>  
+      
+
+      <div class = "card animate-in delay-3">
+        <div class ="tableheader">
+        <h2>Actieve Projecten</h2>
+        <button class = "tablebuttonextra">Alle Bekijken</button>
+        </div>
+        <table class = "metingentable">
+        <thead>
+            <tr>
+                <th>Project</th>
+                <th>Lengte</th>
+                <th>Breedte</th>
+                <th>Hoogte</th>
+                <th>Datum</th>
+                 <th>Leider</th>
+                <th>Acties</th>
+              </tr>
+        </thead>
+        <tbody>
+  <tr>
+    <td>Project Alpha</td>
+    <td>120 cm</td>
+    <td>60 cm</td>
+    <td>40 cm</td>
+    <td>2026-02-10</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Beta</td>
+    <td>200 cm</td>
+    <td>80 cm</td>
+    <td>50 cm</td>
+    <td>2026-02-09</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Gamma</td>
+    <td>150 cm</td>
+    <td>70 cm</td>
+    <td>45 cm</td>
+    <td>2026-02-08</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Delta</td>
+    <td>180 cm</td>
+    <td>90 cm</td>
+    <td>55 cm</td>
+    <td>2026-02-07</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Epsilon</td>
+    <td>130 cm</td>
+    <td>65 cm</td>
+    <td>42 cm</td>
+    <td>2026-02-06</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+  <tr>
+    <td>Project Alpha</td>
+    <td>120 cm</td>
+    <td>60 cm</td>
+    <td>40 cm</td>
+    <td>2026-02-10</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Beta</td>
+    <td>200 cm</td>
+    <td>80 cm</td>
+    <td>50 cm</td>
+    <td>2026-02-09</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Gamma</td>
+    <td>150 cm</td>
+    <td>70 cm</td>
+    <td>45 cm</td>
+    <td>2026-02-08</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Delta</td>
+    <td>180 cm</td>
+    <td>90 cm</td>
+    <td>55 cm</td>
+    <td>2026-02-07</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Epsilon</td>
+    <td>130 cm</td>
+    <td>65 cm</td>
+    <td>42 cm</td>
+    <td>2026-02-06</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+</tbody>
+
+    
+        </table>
+      </div>
+
+      <div class = "card animate-in">
+        <div class ="tableheader">
+        <h2>Afgeronde Projecten</h2>
+        <button class = "tablebuttonextra">Alle Bekijken</button>
+        </div>
+        <table class = "metingentable">
+        <thead>
+            <tr>
+                <th>Project</th>
+                <th>Lengte</th>
+                <th>Breedte</th>
+                <th>Hoogte</th>
+                <th>Datum</th>
+                 <th>Leider</th>
+                <th>Acties</th>
+              </tr>
+        </thead>
+        <tr>
+    <td>Project Alpha</td>
+    <td>120 cm</td>
+    <td>60 cm</td>
+    <td>40 cm</td>
+    <td>2026-02-10</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Beta</td>
+    <td>200 cm</td>
+    <td>80 cm</td>
+    <td>50 cm</td>
+    <td>2026-02-09</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Gamma</td>
+    <td>150 cm</td>
+    <td>70 cm</td>
+    <td>45 cm</td>
+    <td>2026-02-08</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Delta</td>
+    <td>180 cm</td>
+    <td>90 cm</td>
+    <td>55 cm</td>
+    <td>2026-02-07</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Epsilon</td>
+    <td>130 cm</td>
+    <td>65 cm</td>
+    <td>42 cm</td>
+    <td>2026-02-06</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+  <tr>
+    <td>Project Alpha</td>
+    <td>120 cm</td>
+    <td>60 cm</td>
+    <td>40 cm</td>
+    <td>2026-02-10</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Beta</td>
+    <td>200 cm</td>
+    <td>80 cm</td>
+    <td>50 cm</td>
+    <td>2026-02-09</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Gamma</td>
+    <td>150 cm</td>
+    <td>70 cm</td>
+    <td>45 cm</td>
+    <td>2026-02-08</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Delta</td>
+    <td>180 cm</td>
+    <td>90 cm</td>
+    <td>55 cm</td>
+    <td>2026-02-07</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Project Epsilon</td>
+    <td>130 cm</td>
+    <td>65 cm</td>
+    <td>42 cm</td>
+    <td>2026-02-06</td>
+    <td>Admin</td>
+    <td class="tablecellbutton">
+      <button class="icon-button add"><img src="img/add.png" alt=""></button>
+      <button class="icon-button edit"><img src="img/edit.png" alt=""></button>
+      <button class="icon-button delete"><img src="img/delete.png" alt=""></button>
+    </td>
+  </tr>
+        </tbody>
+        </table>
+
+      </div>
+   </div>
+

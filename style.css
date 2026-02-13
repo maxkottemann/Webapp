@@ -1,0 +1,542 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* Layout */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  background-color: #111827; /* Brand color */
+  padding: 7.8%;
+  margin-bottom: 24px;
+  min-height: 10%;
+}
+
+/* Logo inside colored area */
+.sidebar-header {
+display: flex;
+align-items: center;
+justify-content: left;
+}
+.logo{
+  min-width: 20%;
+  max-width: 80%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-item {
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #374151;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  background-color: #f3f4f6;
+}
+
+.nav-item.active {
+  background-color: #111827;
+  color: white;
+}
+
+/* Main Area */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Bar */
+.topbar {
+  height: 64px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background-color: #111827;
+  min-height: 10%;
+  z-index: 1000;
+}
+.topbarbutton{
+  background-color: transparent;
+  border: none;
+}
+.topbarbutton:hover{
+  cursor: pointer;
+   transform: translateY(-1px);   
+}
+.notificationicon{
+  padding-right: 5%;
+  width: 85%;
+}
+
+.page-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.user-name{
+    color: white;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* Content */
+.content {
+  padding: 24px;
+  overflow-y: auto;
+}
+
+/* Cards */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  border: 1px solid #e5e7eb;
+  margin: 3% 1.5%;
+}
+
+.card h2 {
+  margin-bottom: 16px;
+}
+
+/* KPI Grid */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.kpi-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.kpi-value.warning {
+  color: #dc2626;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f3f4f6;
+
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  font-size: 0.9rem;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+/* Charts Grid */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* Chart Base */
+.chart {
+  height: 240px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+}
+
+/* Line Chart Mock */
+.chart-line {
+  position: relative;
+}
+
+.chart-line .line {
+  position: absolute;
+  bottom: 24px;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    #111827 0%,
+    #111827 20%,
+    transparent 20%,
+    transparent 40%,
+    #111827 40%,
+    #111827 60%,
+    transparent 60%,
+    transparent 80%,
+    #111827 80%,
+    #111827 100%
+  );
+}
+
+/* Bar Chart Mock */
+.chart-bar {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.chart-bar .bar {
+  flex: 1;
+  background-color: #111827;
+  border-radius: 4px 4px 0 0;
+}
+.tr{
+  width: 100%;
+}
+.tablecellbutton{
+display: flex;
+gap: 6%;
+}
+
+.tablebutton {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.tablebutton:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);  /* lifted effect */
+  transform: translateY(-1px);       /* subtle lift on hover */
+}
+
+/* Active / pressed effect */
+.tablebutton:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+}
+
+.tablebuttonextra{
+   background-color: transparent;
+  color: #111827;
+  padding: 1%;
+  border: none;
+  font-size: smaller;
+  border: none;
+padding: 6px 20px;
+}
+.tablebuttonextra:hover{
+  transform: translateY(-1px);    /* subtle raise */
+  cursor: pointer;
+background-color: transparent;
+text-decoration: underline;
+text-underline-offset: 3px;
+}
+.tablebuttonextra:active{
+  transform: translateY(0);  
+  background-color: transparent;
+}
+
+
+.meting-card-header{
+  display: flex;
+  flex-direction:row ;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 2%;
+  background-color: #ffffff;
+  margin-top: 0%;
+}
+h2.secondarytext {
+  font-weight: 200; /* normal */
+}
+h3.cardtext{
+  font-weight: 400;
+}
+h2.cardtext{
+  font-weight: 600;
+}
+
+
+.searchbar {
+  min-width: 80%;
+  height: 2rem;
+  padding: 0 12px;                 /* comfortable horizontal padding */
+  font-size: 0.9rem;
+  border: 2px solid #111827;       /* your brand color */
+  border-radius: 8px;               /* smooth corners */
+  outline: none;                    /* remove default outline */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle depth */
+  transition: all 0.2s ease;       /* smooth focus transition */
+  text-align: left;                 /* aligns text nicely */
+}
+
+/* Focus state */
+.searchbar:focus {
+  border-color: #2563EB;            /* highlight color on focus */
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.4); /* soft blue glow */
+}
+
+/* Placeholder style */
+.searchbar::placeholder {
+  color: #6B7280;                   /* light gray placeholder */
+  font-style: italic;
+}
+
+.button-group{
+  display: flex;
+  flex-direction: row;
+}
+.mainbutton {
+  background-color: #111827;      /* your dark color */
+  color: #ffffff;                 /* white text */
+  padding: 10px 20px;             /* comfortable click area */
+  font-weight: 600;               /* semi-bold for professional look */
+  border: none;                   /* no default borders */
+  border-radius: 8px;             /* smooth corners */
+  cursor: pointer;                /* pointer on hover */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* subtle shadow for depth */
+  transition: all 0.2s ease;     /* smooth hover effect */
+}
+
+/* Hover state */
+.mainbutton:hover {
+  background-color: #1f2937;      /* slightly lighter dark */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25); /* lift effect */
+  transform: translateY(-1px);    /* subtle raise */
+}
+
+/* Active / click state */
+.mainbutton:active {
+  background-color: #0f172a;      /* darker on click */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* reset shadow */
+  transform: translateY(0);       /* back down */
+}
+.tableheader{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.topcardholder{
+  margin: 10px;
+}
+tbody tr:hover {
+  background-color: #f9fafb;
+}
+.page-description{
+  color: white;
+}
+.topbartext{
+  color: white;
+  font-weight: 500;
+}
+.tablecellbutton {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+/* Base icon button */
+.icon-button {
+  background: transparent;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon size */
+.icon-button img {
+  width: 28px;
+  height: 28px;
+}
+
+
+/* Hover */
+.icon-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* Delete emphasis */
+.icon-button.delete:hover {
+  background-color: #fee2e2;
+}
+/* Style the hover menu */
+.hover-menu {
+    display: none; /* hidden by default */
+    position: absolute; /* hover menu floats above other elements */
+    top: 100%; /* right below the button */
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 10px 0;
+    min-width: 20vw;
+    z-index: 100; /* above everything else */
+}
+
+/* Individual menu items */
+.hover-menu a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+.hover-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show the menu when hovering topbarbutton */
+.topbarbutton:hover .hover-menu {
+    display: block;
+}
+.notificationmenuitem {
+  height: 5vh;            /* keeps your height */
+  list-style-type: none;  /* removes bullet points */
+
+  display: flex;          /* enables flexbox */
+  align-items: center;    /* vertically center */
+  padding-left: 16px;     /* optional, gives some spacing from the edge */
+  font-size: 14px; 
+  font-weight: 600;       /* optional, adjust font size */
+}
+.cardimage{
+  max-width: 30%;
+}
+.productnummertext{
+  font-size: x-small;
+}
+.cardbuttonbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardbutton {
+  margin-top: 10px;
+  padding: 3px 6px;            /* small & comfortable */
+  border: 1px solid #d1d5db;   /* light gray border by default */
+  background-color: transparent;
+  color: #111827;               /* subtle dark text, low-key */
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cardbutton:hover {
+  cursor: pointer;
+  background-color: #f3f4f6;   /* light hover background */
+  border-color: #111827;       /* dark border on hover */
+  color: #111827;              /* slightly darker text on hover */
+  opacity: 0.9;                /* gentle effect */
+}
+.animate-in {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.delay-1 { animation-delay: 0.08s; }
+.delay-2 { animation-delay: 0.16s; }
+.delay-3 { animation-delay: 0.24s; }
+.delay-4 { animation-delay: 0.32s; }
+
+.filterimage{
+  max-width: 50%;
+}
+.centerbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 30vw;
+}
+.dashboard-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* 👈 KEY FIX */
+  align-items: center;
+  gap: 24px;
+}
+.fullwidthbuttonbar {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.spacedbutton{
+}
+
+
+
